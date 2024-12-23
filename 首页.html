@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内江师范学院校友网</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E90FF;
+  }
+  .navbar {
+    background-color: #E52B50;
+    overflow: hidden;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .carousel {
+    width: 70%;
+    overflow: hidden;
+  }
+  .carousel img {
+    width: 100%;
+    display: none;
+  }
+  .news-list {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  .footer {
+    background-color: #E52B50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="file:///D:/%E5%8A%9E%E5%85%AC/site/%E6%A0%A1%E5%8F%8B%E7%BD%91.html" target="_blank">首页</a>
+  <a href="https://www.njtc.edu.cn/nsxw/xxyw.htm" target="_blank">新闻</a>
+  <a href="https://jycy.njtc.edu.cn/" target="_blank">就业</a>
+  <a href="https://xy.njtc.edu.cn/xyhd.htm" target="_blank">活动</a>
+  <a href="https://xy.njtc.edu.cn/xyzj/xyfc.htm" target="_blank">校友名录</a>
+  <a href="#contact" >关于我们</a>
+</div>
+
+<div class="container">
+  <div class="carousel">
+    <img src="https://p1.ssl.qhimg.com/t01064a0e5861f7820c.jpg" alt="Image 1" class="mySlides fade" style="display: block;">
+    <img src="https://cbgccdn.thecover.cn/newscontent-7e155080-7d5e-472b-9094-75f2ef39e94c-1624940711004.jpg" alt="Image 2" class="mySlides fade">
+    <img src="https://cbgccdn.thecover.cn/newscontent-7b35d73d-a39e-48a6-a4a3-4e7bba6f46c4-1624940711006.jpg" alt="Image 3" class="mySlides fade">
+    <div class="dot" onclick="currentSlide(1)"></div>
+    <div class="dot" onclick="currentSlide(2)"></div>
+    <div class="dot" onclick="currentSlide(3)"></div>
+  </div>
+  <div class="news-list">
+    <h2> 最新新闻</h2>
+    <ul>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288791.htm" target="_blank">[图文]成都师范学院校长史仕新一行到我校考察交流</a></li>
+      </br>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288891.htm" target="_blank">[图文]省纪委监委驻校纪检监察组组长冯雪莲率队赴内江市纪委监委开展对接交流</a></li>
+      </br>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288591.htm" target="_blank">[图文]接旗！四川省第八届大学生社团禁毒文化节将在我校举行</a></li>
+      </br>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288841.htm" target="_blank">[图文]学校党委书记黄永忠讲授专题党课</a></li>
+      </br>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288661.htm" target="_blank">[图文]乐山师范学院副校长陈范华一行来校考察交流</a></li>
+      </br>
+      <li><a href="https://www.njtc.edu.cn/info/1022/288511.htm" target="_blank">[图文][图文]学校荣获2024年四川省高等教育学会招生考试研究工作“先进集体”称号</a></li>
+      </br>
+       <li><a href="https://www.njtc.edu.cn/info/1022/288861.htm" target="_blank">[图文]我校四川省2025年普通高等学校美术与设计类招生专业考试顺利结束</a></li>
+      </br>
+        <li><a href="https://www.njtc.edu.cn/info/1022/288321.htm" target="_blank">[图文]校长陈晓春调研大学生心理健康教育与咨询工作</a></li>
+      <!-- Add more news items here -->
+    </ul>
+  </div>
+</div>
+
+<div class="content" id="news">
+  <h2>学校简介</h2>
+  <p>内江师范学院是四川省人民政府举办，四川省教育厅主管的全日制普通本科高等院校，坐落于&ldquo;成渝地区双城经济圈&rdquo;主轴重要节点城市——四川省内江市。学校于1956年举办高等教育，秉承&ldquo;明德、博学、笃行、创新&rdquo;的校训，践行&ldquo;扎根地方、追求卓越&rdquo;的办学理念，发扬&ldquo;团结奋进、负重自强&rdquo;的内师精神，全面落实立德树人根本任务，全力推进学校内涵式高质量发展，目前已发展成为省属同类院校中办学条件优、学科门类齐、综合实力强，融研究生教育、普通本科教育、继续教育、留学生教育于一体的本科院校。</p>
+  <p><br>  
+  <!-- Add more news content here -->
+</div>
+
+<div class="content" id="events">
+  <h2>历史沿革</h2>
+  <p>内江师范高等专科学校内江师范高等专科学校的前身是1956年由教育部核准创办的四川省初中师资训练班。<br>1958年，更名为内江师范专科学校。女生宿舍东区路上山顶球场男生宿舍学校一角第5教学楼照片内江师范学院内江师范学院内江师范学院内江师范学院内江师范学院<br>1959年，与内江工专、简阳农专合并建立内江专科学校。<br>1962年6月，因国民经济调整，内江专科学校撤销停办，教职工被分流组建到实行内江专区教师进修学校和内江专区初级教育行政干部学校两块牌子一套班子的内江专区行政干部学校。<br>1978年，内江师范专科学校恢复，内江专区行政干部学校余下部分更名为“内江地区教师进修学院”。<br>1978年，经国务院批准重建内江师专。<br>1979年，内江师专与内江地区教师进修学院（即内江教育学院）从一家分为两家独立建校办学。<br>1993年，经原国家教委批准更名为内江师范高等专科学校。<br>内江教育学院内江教育学院的前身是1958年建立的内江地区教育行政干部学校和地区教师进修学校。<br>1984年，经原国家教育部批准内江地区教师进修学院更名为内江教育学院。内江艺体师范学校内江艺体师范学校前身系创建于1905年的川南简易师范学堂，后几经变迁。<br>1952年，更名为内江师范学校。<br>1984年，经省政府批准，更名为内江艺体师范学校。<br>1998年，内江艺体师范非实质性并入内江教育学院。合并建校2000年3月，经国家教育部批准、四川省人民政府同意，原内江师范高等专科学校和原内江教育学院合并建立内江师范学院。内江师范学院2007年，学校在教育部的本科教学工作水平评估中取得优异成绩。<br>2011年，学校开始与四川师范大学联合培养研究生。<br>2017年1月18日，学校被四川省人力资源和社会保障厅认定为四川省级大学生创新创业园区。<br>2018年11月，教育部公示第一批中华优秀传统文化传承基地名单，内江师范学院入选。<br>2019年7月12日，学校成为川南高校联盟理事单位。<br>2020年7月2日，加入成渝地区双城经济圈高校艺术联盟。<br>2021年，学校分批搬迁入高桥新校区。</p>
+  <!-- Add more event details here -->
+</div>
+
+<div class="content" id="about">
+  <h2>学校宣传片</h2>
+  <p><a href="https://www.njtc.edu.cn/xxgk/xxxcp.htm" target="_blank">点击观看</a></p>
+  <!-- Add more about us content here -->
+</div>
+<div class="content" id="contact">
+  <h2>关于我们</h2>
+  <p>本网站主要面对内江师范学院的在读及毕业学生，供同学们在此了解和回顾在校时光的点点滴滴，同时也会提供一些有关就业的消息，以便同学们参考，注重现在的同时展望未来。</p>
+</div>
+
+<div class="footer">
+  <p>版权所有 &copy; 2024 内江师范学院校友网</p>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (slideIndex >= slides.length) {slideIndex = 0}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+</script>
+
+</body>
+</html>
